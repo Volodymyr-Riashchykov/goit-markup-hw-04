@@ -1,0 +1,318 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --foll-color: #2f303a;
+  --text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --nav-text-color: rgba(255, 255, 255, 0.6);
+  --menu-color: #f5f4fa;
+  --bottom-line: rgba(0, 0, 0, 0.25);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.container {
+  /* display: flex; */
+  width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-flex {
+  display: flex;
+}
+.link {
+  color: inherit;
+}
+.link:focus,
+.link:hover {
+  color: var(--accent-text-color);
+}
+/* Header */
+.header-primary {
+  border-bottom: 1px solid var(--bottom-line);
+}
+.header-studio {
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--secondary-color);
+}
+.header-list {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-list .item:not(:first-child) {
+  margin-left: 50px;
+}
+.header-menu-nav {
+  margin: 0 0 0 93px;
+}
+.header-menu-addr {
+  margin: 0 0 0 auto;
+}
+.header-list-item-stydia,
+.header-list-item-portf,
+.header-list-item-kont {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.header-web,
+.primary {
+  color: var(--accent-text-color);
+}
+.header-list-item-email,
+.header-list-item-tel {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* Main */
+.main-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: var(--foll-color);
+}
+.main-section-heading {
+  margin: 0;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.main-section-button {
+  margin-top: 30px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primary-color);
+  background: var(--accent-text-color);
+}
+.main-section,
+.lessons,
+.features {
+  margin-bottom: 94px;
+}
+.features-list {
+  list-style-type: none;
+}
+.team-list li:not(:first-child),
+.lessons-list li:not(:first-child),
+.features-list li:not(:first-child) {
+  margin-left: 30px;
+}
+.features-list h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.features-list p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.lessons-text,
+.team-text {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.lessons-list,
+.team-list {
+  list-style-type: none;
+}
+.team {
+  background-color: var(--menu-color);
+}
+
+.team-list-item {
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-color);
+}
+.team-list-img {
+  display: block;
+}
+.team-list-data {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-list-cap-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title-text-color);
+}
+.team-list-cap-pos {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.19;
+}
+/* Portfolio */
+/* Main */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-list,
+.portfolio-menu {
+  justify-content: center;
+  list-style-type: none;
+}
+.portfolio-menu {
+  margin-bottom: 50px;
+}
+.portfolio-menu li:not(:first-child) {
+  margin-left: 8px;
+}
+.portfolio-list {
+  flex-wrap: wrap;
+}
+.portfolio-menu-item {
+  padding: 6px 22px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--title-text-color);
+  background-color: var(--menu-color);
+}
+.portfolio-primary,
+.portfolio-menu-item:focus,
+.portfolio-menu-item:hover {
+  color: var(--primary-color);
+  background-color: var(--accent-text-color);
+}
+.portfolio-list-item:not(:nth-child(3n + 1)) {
+  margin-left: 30px;
+}
+.portfolio-list-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+.portfolio-list-item {
+  overflow: hidden;
+}
+.portfolio-list-item-link {
+  display: block;
+  text-decoration: none;
+}
+.portfolio-list-item:focus,
+.portfolio-list-item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.portfolio-list-img {
+  display: block;
+}
+.portfolio-list-card {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+}
+.portfolio-list-cap-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio-list-cap-pos {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--text-color);
+}
+/* Footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--foll-color);
+}
+.footer-map,
+.footer-studio {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.footer-address {
+  margin-top: 30px;
+  /* padding-bottom: 60px; */
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-address ul {
+  list-style-type: none;
+}
+
+.footer-email,
+.footer-tel {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--nav-text-color);
+}
