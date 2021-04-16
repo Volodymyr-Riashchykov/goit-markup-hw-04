@@ -76,6 +76,8 @@ img {
   border-bottom: 1px solid var(--bottom-line);
 }
 .header-studio {
+  padding-top: 24px;
+  padding-bottom: 25px;
   text-decoration: none;
   font-family: Raleway;
   font-style: normal;
@@ -167,9 +169,7 @@ img {
   color: var(--primary-color);
   background: var(--accent-text-color);
 }
-.features {
-  padding-top: 94px;
-}
+
 .features-list {
   list-style-type: none;
 }
@@ -188,12 +188,10 @@ img {
   background-position: center;
 }
 .features-icon {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  text-align: center;
-
   margin-bottom: 30px;
   background-color: var(--menu-color);
 }
@@ -214,10 +212,13 @@ img {
   line-height: 1.7;
 }
 .portfolio,
-.lessons,
+.features,
 .client,
 .team {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+.lessons {
   padding-bottom: 94px;
 }
 .client-text,
@@ -267,10 +268,11 @@ img {
   justify-content: center;
 }
 .team-icon-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 11px;
   border-radius: 50%;
   fill: var(--icon-color);
 }
