@@ -119,7 +119,8 @@ img {
 }
 .header-list-item-email,
 .header-list-item-tel {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--text-color);
@@ -127,7 +128,7 @@ img {
   fill: var(--text-color);
 }
 .header-icon {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 /* Main */
 .main-section {
